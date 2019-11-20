@@ -14,11 +14,9 @@ Una vez creada la carpeta *StudyScriptData* en el destino en el que clonamos el 
 
   `sudo apt-get install libboost-filesystem-dev`
 
-O
+O en caso de error con el anterior comando.
 
   `sudo apt-get install libboost-all-dev`
-  
-En caso de error con el anterior comando.
 
 También será necesario tener Vim instalado para un correcto funcionamiento del modo archivo.
 
@@ -26,11 +24,9 @@ Un vez instalados todos los paquetes necesarios, podemos proceder a compilar el 
 
   `g++ SSD.cpp -o SSD -lboost_filesystem -lboost_system -lreadline`
 
-Y
+Y para ejecutarlo
 
   `./SSD`
-  
-Para ejecutarlo.
 
 ## Funciones
 
@@ -161,17 +157,19 @@ Lo básico que necesitamos saber de Vim es que tiene dos modos; el modo comando,
 
 Al abrir cualquier archivo siempre iniciamos en modo comando, que al principio puede resultar un tanto extraño porque estamos escribiendo en un editor de texto, pero no vemos lo que escribimos.
 
-Una vez abierto el archivo podemos hacer varias cosas, entre ellas entrar al modo escritura, pulsando la tecla "i", y salir del mismo pulsando "Esc". Veremos que al estar en el modo escritura con Vim, en la última línea de la consola, abajo a la izquierda, nos indicará "--INSERTAR--", lo que significa que ya podemos escribir libremente. O también podemos interactuar con el modo comando, para insertarlos, antes de nada será necesario escribir dos puntos ":", para indicarle a Vim que estamos mandándole un comando a realizar sobre el archivo.
+Una vez abierto el archivo podemos hacer varias cosas, entre ellas entrar al modo escritura, pulsando la tecla `i`, y salir del mismo pulsando `Esc`. Veremos que al estar en el modo escritura con Vim, en la última línea de la consola, abajo a la izquierda, nos indicará `--INSERTAR--`, lo que significa que ya podemos escribir libremente. O también podemos interactuar con el modo comando, para insertarlos, antes de nada será necesario escribir dos puntos `:`, para indicarle a Vim que estamos mandándole un comando a realizar sobre el archivo.
 
 Aquí una serie de comandos básicos para poder editar los archivos sin problemas:
 
-`:q` //Salir del archivo (cuando no hayamos realizado ningún cambio)
-`:q!` //Salir del archivo sin guardar los cambios
-`:w` //Guardar los cambios realizados
+`:q` *// Salir del archivo (cuando no hayamos realizado ningún cambio)*
+
+`:q!` *// Salir del archivo sin guardar los cambios*
+
+`:w` *// Guardar los cambios realizados*
 
 Podemos también combinar diferentes comandos para agilizar
 
-`:wq` //Para guardar y salir de Vim
+`:wq` *// Para guardar y salir de Vim*
 
 Una vez escrito nuestro comando, pulsamos intro para ejecutarlo.
 
